@@ -404,10 +404,10 @@ left:40%;
 }
 
 .table{
-   height: 70vh;
+   height: 40vh;
    width: 60vw;
   
- 
+ margin-bottom:28.5vh;
    font-size: 15vw;
 
    /* z-index: 50;
@@ -433,7 +433,7 @@ align-items: center;
 justify-content: center;
 width: 70vw;
 margin-left: 15vw;
-height: 10vh;
+height: 5vh;
 }
 .bu{
     display: none;
