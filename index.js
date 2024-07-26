@@ -11,6 +11,7 @@ let b=document.querySelector(".b");
 // let circle2 = document.querySelector(".circle2");
 let jo= document.querySelector(".jo");
 let table= document.querySelector(".table");
+let bu=document.querySelector(".bu");
 circle.addEventListener("mouseover", function() {
     h.style.color = "red";
     h1.style.color = "red";
@@ -20,6 +21,8 @@ circle.addEventListener("mouseover", function() {
     jo.style.color="white";
     main.style.backgroundColor="red";
     b.style.color="white";
+    table.style.backgroundColor="aqua";
+    bu.style.backgroundColor="aqua";
    
 });
 
@@ -32,5 +35,5 @@ circle.addEventListener("mouseout", function() {
     jo.style.color="red";
     main.style.backgroundColor="aqua";
     b.style.color="red";
-    
+    table.style.backgroundColor="rgba(255, 0, 0,0.8)";
 });
