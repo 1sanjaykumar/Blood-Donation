@@ -22,13 +22,15 @@ main{
 }
 
 .first{
+    
  width: 100%;
- height: 100vh;
+
 overflow: hidden;
 display: flex;
 }
 
 .circle{
+    color: white;
     width: 70vw;
     height: 55vw;
     transform: translate(-40%,-10%);
@@ -62,13 +64,13 @@ display: flex;
     font-size: 3vw;
     color: red;
     border: transparent;
-    
+    box-shadow: 10px 10px 10px 10px;
 }
 
 
 img{
     transition: transform .4s ease-in;
-    margin-top: 10%;
+    margin-top: 11%;
     margin-left: 60%;
     position:absolute;
     width: 38%;
@@ -92,6 +94,7 @@ img:hover{
     
 }
 .do{
+    letter-spacing: -12px;
   position: relative;
 top: 24%;
 left:40%;
@@ -106,15 +109,42 @@ left:40%;
     position: relative;
     transition: 1s;
  top: 22%;
+ letter-spacing: -12px;
  left: 40%;
     font-size: 8vw;
     font-family: "Titan One", sans-serif;
       margin-left: 15%;
- 
 }
+.bab{
+    margin-left: 30px;
+}
+.circle .hi{
+    opacity: 0;
+    animation: animat 1s linear forwards;
+}
+@keyframes animat{
+    0%{
+        opacity: 0;
+        transform: rotate(90deg);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+        fill: blur(0);
+    }
+}
+
+.hi:nth-child(1){animation-delay: 0.20s;}
+.hi:nth-child(2){animation-delay: 0.25s;}
+.hi:nth-child(3){animation-delay: 0.30s;}
+.hi:nth-child(4){animation-delay: 0.35s;}
+.hi:nth-child(5){animation-delay: 0.40s;}
+.hi:nth-child(6){animation-delay: 0.45s;}
 
 .sa{
     z-index: 30;
+    letter-spacing: -13px;
     left: 42%;
     position: relative;
     margin-left: 7%;
@@ -124,21 +154,92 @@ left:40%;
     font-family: "Titan One", sans-serif;
 }
 .b{
+    letter-spacing: -12px;
     transition: 1s;
     top: 24%;
-    left: 40%;
+    left: 41%;
     position: relative;
     font-size: 8vw;
     font-family: "Titan One", sans-serif;
     margin-left: 7px;
     color: red;
 }
+
+.circle .blood{
+    opacity: 0;
+    animation: blood 1s linear forwards;
+}
+
+@keyframes blood{
+    0%{
+        opacity: 0;
+        transform: rotate(90deg);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+        fill: blur(0);
+    }
+}
+
+.blood:nth-child(1){animation-delay: 0.60s;}
+.blood:nth-child(2){animation-delay: 0.65s;}
+.blood:nth-child(3){animation-delay: 0.75s;}
+.blood:nth-child(4){animation-delay: 0.80s;}
+.blood:nth-child(5){animation-delay: 0.85s;}
 .table{
     width: 90vw;
     height: 40v;
    
 }
 
+.circle .ba{
+    opacity: 0;
+    animation: ba 1s linear forwards;
+}
+@keyframes ba{
+    0%{
+        opacity: 0;
+        transform: rotate(90deg);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+        fill: blur(0);
+    }
+}
+.ba:nth-child(1){animation-delay: 0.95s;}
+.ba:nth-child(2){animation-delay: 1s;}
+.ba:nth-child(3){animation-delay: 1.05s;}
+.ba:nth-child(4){animation-delay: 1.10s;}
+.ba:nth-child(5){animation-delay: 1.15s;}
+
+.circle .save{
+    opacity: 0;
+    animation: save 1s linear forwards;
+}
+@keyframes save{
+    0%{
+        opacity: 0;
+        transform: rotate(90deg);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+        fill: blur(0);
+    }
+}
+.save:nth-child(1){animation-delay: 1.25s;}
+.save:nth-child(2){animation-delay: 1.35s;}
+.save:nth-child(3){animation-delay: 1.40s;}
+.save:nth-child(4){animation-delay: 1.45s;}
+.save:nth-child(5){animation-delay: 1.50s;}
+.save:nth-child(6){animation-delay: 1.55s;}
+.save:nth-child(7){animation-delay: 1.60s;}
+.circle 
 .second{
     width: 100%;
     height: 100%;
@@ -147,17 +248,7 @@ left:40%;
     align-items: center;
 border: transparent;
 }
-.table{
-    z-index: 50;
-    width: 90%;
-    border-radius: 30px;
-    height:50vh;
-    box-shadow: 0px 1px 6px 1px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 50px;
-    border: transparent;
-    display: flex;
-}
+
 .half{
     display: flex;
     justify-content: center;
@@ -219,5 +310,137 @@ background-color: rgba(172, 255, 47, 0.163);
     margin: 4%;
     border-radius: 15px;
     background-color: rgba(172, 255, 47, 0.163);
+}
+
+.empty{
+  bottom: 67%;
+  left: 40%;
+    position: absolute;
+    height: 16vh;
+    width: 28vw;
+    border-radius: 80px;
+background-color:transparent;
+}
+
+.table{
+    z-index: 50;
+    width: 90%;
+    border-radius: 30px;
+    height:50vh;
+   padding-left: 50px;
+    box-shadow: 0px 1px 6px 1px;
+background:linear-gradient(170deg,red,white,aqua);
+background-color: white;
+    margin: 50px;
+    border: transparent;
+    transition: transform .2s ease-in;
+    display: flex;
+}
+
+.table:hover{
+    animation-duration: 0.5s;
+   transform: scale(1.05);
+}
+
+@media only screen and (max-width:600px)  {
+   
+.sa{
+    z-index: 30;
+    letter-spacing: -3px;
+    left: 42%;
+    position: relative;
+    margin-left: 7%;
+    top: 20%;
+    font-size: 8vw;
+    transition: 1s;
+    font-family: "Titan One", sans-serif;
+}
+.b{
+    letter-spacing: -3px;
+    transition: 1s;
+    top: 24%;
+    left: 41%;
+    position: relative;
+    font-size: 8vw;
+    font-family: "Titan One", sans-serif;
+    margin-left: 7px;
+    color: red;
+}
+.do{
+    letter-spacing: -3px;
+  position: relative;
+top: 24%;
+left:40%;
+  font-size: 8vw;
+  font-family: "Titan One", sans-serif;
+  margin-left: 11%;
+  transition: 1s;
+}
+
+
+.be{
+    position: relative;
+    transition: 1s;
+ top: 22%;
+ letter-spacing: -3px;
+ left: 40%;
+    font-size: 8vw;
+    font-family: "Titan One", sans-serif;
+      margin-left: 15%;
+}
+
+.bab{
+    margin-left: 10px;
+}
+
+.table{
+   height: 70vh;
+   width: 60vw;
+  
+ 
+   font-size: 15vw;
+
+   /* z-index: 50;
+   width: 90%;
+   border-radius: 30px;
+   height:50vh;
+  padding-left: 50px;
+   box-shadow: 0px 1px 6px 1px;
+background:linear-gradient(170deg,red,white,aqua);
+background-color: white;
+   margin: 50px;
+   border: transparent;
+   transition: transform .2s ease-in;
+   display: flex; */
+}
+.txt{
+    display: flex;
+
+    font-size: 6vw;
+  
+}
+.half{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.half div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.bu{
+    
+    display: none;
+}
+
+
+.second{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 }
 

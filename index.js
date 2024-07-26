@@ -10,6 +10,7 @@ let main=document.querySelector("main");
 let b=document.querySelector(".b");
 // let circle2 = document.querySelector(".circle2");
 let jo= document.querySelector(".jo");
+let table= document.querySelector(".table");
 circle.addEventListener("mouseover", function() {
     h.style.color = "red";
     h1.style.color = "red";
@@ -18,7 +19,8 @@ circle.addEventListener("mouseover", function() {
     jo.style.backgroundColor="red";
     jo.style.color="white";
     main.style.backgroundColor="red";
-b.style.color="white";
+    b.style.color="white";
+   
 });
 
 circle.addEventListener("mouseout", function() {
@@ -30,4 +32,5 @@ circle.addEventListener("mouseout", function() {
     jo.style.color="red";
     main.style.backgroundColor="aqua";
     b.style.color="red";
+    
 });
