@@ -6,95 +6,136 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <main>
+    <main class="main">
+        <div class="first">
+            <div class="left">
+                <div class="circle">
+                    <span class="do h i">
+                        <span class="hi">D</span>
+                        <span class="hi">o</span>
+                        <span class="hi">n</span>
+                        <span class="hi">a</span>
+                        <span class="hi">t</span>
+                        <span class="hi">e</span>
+                    </span>
+                    <span class="b">
+                        <span class="blood">B</span>
+                        <span class="blood">l</span>
+                        <span class="blood">o</span>
+                        <span class="blood">o</span>
+                        <span class="blood">d</span>
+                    </span>
+                    <span class="be h1">
+                        <span class="ba">B</span>
+                        <span class="ba">e</span>
+                        <span class="ba bab">A</span><br>
+                    </span>
+                    <span class="sa h2">
+                        <span class="save">S</span>
+                        <span class="save">a</span>
+                        <span class="save">v</span>
+                        <span class="save">i</span>
+                        <span class="save">o</span>
+                        <span class="save">u</span>
+                        <span class="save">r</span>
+                    </span>
+                    <button class="jo">
+                        <span>Register Here</span>
+                    </button>
+                </div>
 
-    <div class="first">
-        <div class="left">
-        <div class="circle">
-            <span class="do h i" >
-               <span class="hi">D</span>
-               <span class="hi">o</span>
-               <span class="hi">n</span>
-               <span class="hi">a</span>
-               <span class="hi">t</span>
-               <span class="hi">e</span>
-            </span>
-            <span class="b">
-               <span class="blood">B</span>
-               <span class="blood">l</span>
-               <span class="blood">o</span>
-               <span class="blood">o</span>
-               <span class="blood">d</span>
-            </span>
-            <span class="be h1">
-               <span class="ba">B</span>
-               <span class="ba">e</span>
-               <span class="ba bab">A</span><br>
-             </span>
-             <span class="sa h2">
-                <span class="save">S</span>
-                <span class="save">a</span>
-                <span class="save" >v</span>
-                <span class="save">i</span>
-                <span class="save">o</span>
-                <span class="save">u</span>
-                <span class="save">r</span>
-               </span>
-            <button class="jo">Join Us</button>
-        </div>
-     
-                  <!-- <div class="text">
-            <p> <span class="do h" >Donate <span class="b">Blood</span> </span><br> <span class="be h1"> Be A </span><br> <span class="sa h2"> Saviour </span></p>
-        </div> -->
-        <div class="empty"></div>
-        <div class="circle2">
-        </div>
-        
-        </div>
-       
-        <img src="blood.png" alt="">
-    </div>
-    
-    <div class="second">
-        <div class="table">
-<div class="half">
-<div class="div">
-   <div class="txt"> Blood Group :</div><input type="text">
-</div >
-<div class="div">
-   <div class="txt"> Country :</div><input type="text">
-</div>
-<div class="div">
-    <div class="txt"> State / UT :</div><input type="text">
- </div>
- <div class="div" >
-    <div class="txt"> Distric :</div><input type="text">
- </div>
- <div class="div">
-    <div class="txt"> City :</div><input type="text">
- </div>
- <div class="div">
-    <div class="txt"> Locality :</div><input type="text">
- </div>
- <div class="buo">
-    <button class="bo">Clear</button>
- <button class="bo">Search</button>
- </div>
- 
-</div>
+                <div class="conteiner">
+                    <span class="j jdo">Donate</span>
+                    <span class="j1">Blood</span>
+                    <span class="j2 blue">Be A</span>
+                    <span class="j3 blue">Saviour</span>
+                    <span>
+                        <button class="j4">Register Here</button>
+                    </span>
+                </div>
+                <div class="empty"></div>
+                <div class="circle2"></div>
+            </div>
+           
+            <img class="img" src="blood.png" alt="">
 
-<div class="full">
-<button class="bu">Button</button>
-<button class="bu">Button</button>
-<button class="bu">Button</button>
-</div>
+           
+            <div class="scroll" id="scrollAnimation">
+                <span class="wrapper">
+                   <i class='fa fa-chevron-up' style="--i:6"></i>
+                   <i class='fa fa-chevron-up' style="--i:4"></i>
+                   <i class='fa fa-chevron-up' style="--i:2"></i>
+                </span>
+                <!-- <p>Scroll Down</p> -->
+            </div>
         </div>
-    </div>
+        <div class="second">
+            <div class="table">
+                <div class="half">
+                    <div class="div">
+                        <div class="txt">Blood Group:</div>
+                        <select name="bloodGroup" id="bloodGroupDropdown">
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="O+">O+</option>
+                            <option value="B+">B+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="A-">A-</option>
+                            <option value="O-">O-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                    <div class="div">
+                        <div class="txt">Country:</div>
+                        <select name="country" id="countryDropdown">
+                            <option value="">Select Country</option>
+                            <option value="India">India</option>
+                        </select>
+                    </div>
+                    <div class="div">
+                        <div class="txt">State / UT:</div>
+                        <select name="state" id="stateDropdown">
+                            <option value="">Select State / UT</option>
+                        </select>
+                     </div>
+                     <div class="div">
+                        <div class="txt">District:</div>
+                        <select name="cities" id="districtDropdown">
+                            <option value="">Select District</option>
+                        </select>
+                    </div>
+                    <div class="div">
+                        <div class="txt">Locality:</div>
+<select name="" id="">
+    <option value="">Locality</option>
+</select>
+                    </div>
+                    <div class="buo">
+                        <button class="bo" id="clearButton">Clear</button>
+                        <button class="bo" id="searchButton">Search</button>
+                    </div>
+                </div>
+
+                <div class="full">
+                    <button class="bu">Button</button>
+                    <button class="bu">Button</button>
+                    <button class="bu">Button</button>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>

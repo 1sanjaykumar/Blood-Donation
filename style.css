@@ -15,21 +15,20 @@ html,body{
 
 }
 main{
-   transition: 1s;
     overflow: hidden;
+    transition: 1s;
     width: 100%;
-    background-color: aqua;
+   background-color: rgb(255, 255, 255);
 }
 
-.first{
-    
- width: 100%;
-
+.first{ 
+   width: 100%;
 overflow: hidden;
 display: flex;
 }
 
 .circle{
+      filter: drop-shadow(2px 7px 5px black);
     color: white;
     width: 70vw;
     height: 55vw;
@@ -54,36 +53,27 @@ display: flex;
 
 .jo{
     font-family: "Titan One", sans-serif;
-    width: 25%;
+    width: 35%;
     height: 10%;
    top: 34%;
-   left: 7%;
+   left: -3%;
    transition: 1s;
     position: relative;
     z-index: 55;
     border-radius:20px;
     font-size: 3vw;
     color: red;
-    border: transparent;
     box-shadow: 5px 5px 2px 10px;
 }
 
+.jo:active{
+    background-color: rgb(229, 143, 143);
+}
+button:active{
+    background-color: rgb(229, 143, 143);
+}
 
-img{
-    transition: transform .4s ease-in;
-    margin-top: 11%;
-    margin-left: 60%;
-    position:absolute;
-    width: 38%;
-    float:right;
-    z-index: 6;
-    filter: drop-shadow(solid black 3px 3px 3px 3px);
-}
-img:hover{
-    transform: scale(1.1);
-    animation-name: increase;
-    animation-duration:.2s;
-}
+
 .text{
     z-index: 5;
     color: white;
@@ -156,6 +146,7 @@ left:40%;
     font-family: "Titan One", sans-serif;
 }
 .b{
+ 
     letter-spacing: -12px;
     transition: 1s;
     top: 24%;
@@ -243,6 +234,8 @@ left:40%;
 .save:nth-child(7){animation-delay: 2.15s;}
 .circle 
 .second{
+    z-index: -1;
+    background-color: transparent;
     width: 100%;
     height: 100%;
     display: flex;
@@ -250,6 +243,55 @@ left:40%;
     align-items: center;
 border: transparent;
 }
+img{
+    display: none;
+    filter: drop-shadow(2px 7px 5px black);
+    transition: transform .4s ease-in;
+    margin-top: -40%;
+    margin-left: 56%;
+    position:absolute;
+    width: 40vw;
+    height: 67vh;
+    float:right;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img:hover{
+    transform: scale(1.1);
+    animation-name: increase;
+    animation-duration:.2s;
+}
+
+.white{
+    margin-top: 15%;
+    margin-left: 56%;
+    position:absolute;
+    width: 40vw;
+    height: 67vh;
+    float:right;
+    z-index: 6;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* @keyframes img{
+    0%{
+        
+        width: 0%;
+        filter: blur(5px);
+    }
+    100%{
+        
+        width: 38%;
+        fill: blur(0);
+    }
+}
+img{animation-delay: 2.25s;} */
 
 .half{
     display: flex;
@@ -265,6 +307,14 @@ border: transparent;
 input{
     border-radius: 8px;
     height: 40%;
+    border: 3px solid lightseagreen;
+  padding-left: 7px;
+  
+}
+select{
+    width: 50%;
+    border-radius: 8px;
+    height: 50%;
     border: 3px solid lightseagreen;
   padding-left: 7px;
   
@@ -291,8 +341,8 @@ input{
     font-size:1.4vw;
     border-radius: 15px;
     height: 60%;
-    border: 3px solid lightseagreen;
-background-color:aqua;
+    background-color:red;
+color: white;
 }
 .full{
     width: 50%;
@@ -313,27 +363,29 @@ background-color:aqua;
     margin: 4%;
     margin-top: 7%;
     border-radius: 15px;
-    background-color: aqua;
+    background-color:red;
+    color: white;
 }
 
 .empty{
-  bottom: 67%;
+  bottom: 66%;
   left: 40%;
+  z-index: 400;
+  background-color: transparent;
     position: absolute;
-    height: 16vh;
-    width: 28vw;
+    height: 19vh;
+    width: 29vw;
     border-radius: 80px;
-background-color:transparent;
+
 }
 
 .table{
-    z-index: 50;
     width: 90%;
     border-radius: 30px;
     height:50vh;
     padding-left: 50px;
     box-shadow: 0px 1px 6px 1px;
-    background-color:rgb(255, 0, 0);
+    background-color: transparent;
     margin: 50px;
     border: transparent;
     transition: transform .2s ease-in;
@@ -348,55 +400,83 @@ background-color:transparent;
    transform: scale(1.05);
    
 }
+.conteiner{
+    display:none;
+}
 
-@media only screen and (max-width:600px)  {
+
+@media only screen and (max-width:480px)  {
+    .circle .do,.b,.be,.sa,.jo{
+        display:none;
+    }
+    .circle{
+        transform: translate(-40%,5%);
+top: 10%;
+    }
    input{
    height: 2vh;
    width: 30vw;
    }
-.sa{
-    z-index: 30;
-    letter-spacing: -3px;
-    left: 42%;
-    position: relative;
-    margin-left: 7%;
-    top: 20%;
-    font-size: 8vw;
-    transition: 1s;
+   .conteiner .j,.j1,.j2,.j3,.j4{
+    display:block;
+}
+   .conteiner{
+    position: absolute;
+    left: 55%;
+    display: block;
+    width: 40vw;
+    height: 20vh;
+    color: white;
+   top: 10%;
+   }
+   .jdo{
+    padding-left: 17px;
+   }
+   .conteiner span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+.j4{
+    width: 90%;
+    height: 4vh;
+    border-radius: 20px;
+background-color: #FF0000;
+color: blue;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
     font-family: "Titan One", sans-serif;
 }
-.b{
-    letter-spacing: -3px;
-    transition: 1s;
-    top: 24%;
-    left: 41%;
-    position: relative;
-    font-size: 8vw;
-    font-family: "Titan One", sans-serif;
-    margin-left: 7px;
-    color: red;
-}
-.do{
-    letter-spacing: -3px;
-  position: relative;
-top: 24%;
-left:40%;
+
+.j3{
+    color: blue;
+    letter-spacing: normal;
   font-size: 8vw;
   font-family: "Titan One", sans-serif;
-  margin-left: 11%;
-  transition: 1s;
+}
+.j1{
+    color: red;
+    letter-spacing: normal;
+    font-size: 8vw;
+    font-family: "Titan One", sans-serif;
+}
+.j{
+    color: red;
+    font-family: "Titan One", sans-serif;
+    letter-spacing: normal;
+  font-size: 8vw;
+  font-family: "Titan One", sans-serif;
 }
 
 
-.be{
-    position: relative;
-    transition: 1s;
- top: 22%;
- letter-spacing: -3px;
- left: 40%;
+.j2{
+    color: blue;
+    letter-spacing: normal;
     font-size: 8vw;
     font-family: "Titan One", sans-serif;
-      margin-left: 15%;
 }
 
 .bab{
@@ -406,10 +486,9 @@ left:40%;
 .table{
    height: 40vh;
    width: 60vw;
-  
- margin-bottom:28.5vh;
+   position: absolute;
    font-size: 15vw;
-
+   top: 40%;
    /* z-index: 50;
    width: 90%;
    border-radius: 30px;
@@ -422,6 +501,14 @@ background-color: white;
    border: transparent;
    transition: transform .2s ease-in;
    display: flex; */
+}
+img{
+    display: block;
+position: absolute;
+    left: -47%;
+    top: 25%;
+    height: 20vh;
+    width: 40vw;
 }
 .txt{
     font-size: 4vw;
@@ -438,9 +525,6 @@ height: 5vh;
 .bu{
     display: none;
 }
- img path{
-    fill: #000;
- }
 
 .second{
 display: flex;
@@ -462,12 +546,265 @@ height: 4vh;
 .bo{
 font-size: 4vw;
 width: 100vw;
+color: black;
 height: 4vh;
     background-color: aqua;
 }
-
 .jo{
     box-shadow: 3px 2px 2px 4px;
 }
+#scrollAnimation{
+    display: none;
+}
+select{
+    height: 3vh;
+}
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .circle .do,.b,.be,.sa,.jo{
+        display:none;
+    }
+   input{
+   height: 2vh;
+   width: 30vw;
+   }
+   .conteiner .j,.j1,.j2,.j3,.j4{
+    display:block;
+}
+   .conteiner{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    display: block;
+    width: 40vw;
+    height: 25vh;
+    color: white;
+   
+   }
+   .jdo{
+    padding-left: 30px;
+   }
+   .conteiner span{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+.j4{
+    width: 80%;
+    height: 4vh;
+    font-size: 3.3vw;
+    border-radius: 20px;
+background-color: #FF0000;
+color: blue;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: "Titan One", sans-serif;
+}
+select{
+    height: 3vh;
+    font-size: 2vw;
+}
+.j3{
+    color: blue;
+    letter-spacing: normal;
+  font-size: 8vw;
+  font-family: "Titan One", sans-serif;
+}
+.j1{
+    color: red;
+    letter-spacing: normal;
+    font-size: 8vw;
+    font-family: "Titan One", sans-serif;
+}
+.j{
+    color: red;
+    font-family: "Titan One", sans-serif;
+    letter-spacing: normal;
+  font-size: 8vw;
+  font-family: "Titan One", sans-serif;
+}
+
+
+.j2{
+    color: blue;
+    letter-spacing: normal;
+    font-size: 8vw;
+    font-family: "Titan One", sans-serif;
+}
+
+.bab{
+    margin-left: 10px;
+}
+
+.table{
+   height: 40vh;
+   width: 60vw;
+ margin-bottom:28.5vh;
+   font-size: 15vw;
+
+   /* z-index: 50;
+   width: 90%;
+   border-radius: 30px;
+   height:50vh;
+  padding-left: 50px;
+   box-shadow: 0px 1px 6px 1px;
+background:linear-gradient(170deg,red,white,aqua);
+background-color: white;
+   margin: 50px;
+   border: transparent;
+   transition: transform .2s ease-in;
+   display: flex; */
+}
+img{
+    display: block;
+position: absolute;
+top: 50%;
+left: -50%;
+height: 30vh;
+width: 35vw;
+
+}
+.txt{
+    font-size: 4vw;
+}
+
+.half .div{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60vw;
+margin-left: 25vw;
+height: 4.5vh;
+}
+.bu{
+    display: none;
+}
+
+.second{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.txt span{
+display: none;
+}
+.half .buo{
+display: flex;
+flex-direction: row;
+margin-top: 20%;
+margin-left: 85%;
+
+width: 70vw;
+height: 4vh;
+}
+.bo{
+font-size: 3vw;
+width: 100vw;
+color: black;
+height: 4vh;
+    background-color: aqua;
+}
+.jo{
+    box-shadow: 3px 2px 2px 4px;
+}
+#scrollAnimation{
+    display: none;
+}
+
+
+}
+
+/* .mouse{
+    width: 25px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+}
+.wheel{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin: auto;
+    animation: wheel 1s linear infinite;
+}
+
+@keyframes wheel {
+
+    0%{
+        opacity: 1;
+        transform: translateY(1rem);
+       
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+} */
+/* .scroll{
+    position: absolute;
+    transform: translate(50vw,85vh);
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ justify-content: center;
+ flex-direction: column;
+ font-weight: lighter;
+   height:80px;
+} */
+
+
+.scroll{
+    position: absolute;
+    transform: translate(45vw,83vh);
+    background-color:white;
+    color: rgb(154, 148, 148);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 13px;
+     transition: transform .2s ease-in;
+    transition: 1s;
+}
+i{
+   font: size 50px;
+    animation:direction 1s linear infinite;
+    animation-delay: calc(var(--i)*0.1s);
+}
+@keyframes direction {
+    0%{
+                opacity: 1;
+        transform: translateY(10px);
+       
+    }
+     100%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+p{
+    margin-top: 20px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vw;
+}
+.hide {
+    opacity: 0;
+    transition: opacity 1s ease-out;
 }
 
